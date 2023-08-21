@@ -1,0 +1,46 @@
+@import "../../../../assets/styles/variables";
+
+.wrapper {
+  width: 100%;
+  padding: 40px 0 20px;
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+
+    .link {
+      position: relative;
+      list-style: none;
+      text-transform: uppercase;
+      font-size: 14px;
+      padding-bottom: 5px;
+      color: $icons-color;
+      letter-spacing: 0.7px;
+      cursor: pointer;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: $font-color;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+        border-radius: 5px;
+      }
+
+      &:hover {
+        &::after {
+          transform: scaleX(1);
+          transform-origin: bottom left;
+        }
+      }
+    }
+  }
+}
