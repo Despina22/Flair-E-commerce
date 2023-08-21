@@ -1,10 +1,12 @@
+@import "../../../../assets/styles/variables";
+
 .row {
-  background-color: #f3f3f3;
+  background-color: $gray-light;
   font-weight: 200;
   text-align: center;
   padding: 7px;
   font-size: 14px;
-  color: #333;
+  color: $font-color;
   letter-spacing: 0.7px;
   p {
     margin: 0;
@@ -38,9 +40,9 @@
 
     .search-field {
       width: 300px;
-      background-color: #f8f8f8;
-      color: #000;
-      border: 1px solid #d7d7d7;
+      background-color: $background-light-color;
+      color: $black-color;
+      border: 1px solid $border-light-color;
       font-size: 14px;
       padding: 10px;
     }
@@ -49,7 +51,7 @@
       position: absolute;
       top: 8px;
       right: 75px;
-      color: #757575;
+      color: $icons-color;
     }
   }
 
@@ -72,7 +74,7 @@
 
   .items {
     padding-right: 30px;
-    color: #757575;
+    color: $icons-color;
 
     .icon {
       font-size: 30px;
