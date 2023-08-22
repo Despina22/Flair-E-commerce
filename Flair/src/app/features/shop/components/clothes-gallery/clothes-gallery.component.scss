@@ -1,0 +1,55 @@
+@import "../../../../../assets/styles/variables";
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 78vw;
+  margin: 30px auto;
+
+  .container {
+    position: relative;
+    overflow: hidden;
+
+    .img {
+      max-width: 350px;
+    }
+
+    &:hover .img {
+      transform: scale(1.1);
+      transition: all 0.8s;
+    }
+
+    &:hover .header:after {
+      width: 60%;
+      left: 50%;
+    }
+
+    .header {
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 30px;
+      color: $white-color;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 8px;
+      font-weight: 300;
+      line-height: 40px;
+
+      &:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 1px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        background: white;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
+    }
+  }
+}
