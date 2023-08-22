@@ -1,0 +1,32 @@
+@import "../../../../assets/styles/variables";
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  height: 300px;
+  background-color: $gray-light;
+  padding: 20px 80px;
+
+  .header {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    color: $font-color;
+  }
+
+  .list {
+    list-style: none;
+    font-size: 14px;
+    color: $font-color;
+    font-weight: 300;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
