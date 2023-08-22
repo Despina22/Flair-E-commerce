@@ -1,0 +1,18 @@
+<div class="wrapper">
+  <div class="essentials">
+    <h2 class="header">New Essentials</h2>
+    <p class="paragraph">
+      Refresh your wardrobe and discover the latest season-spanning styles to
+      wear now.
+    </p>
+    <button class="btn">Shop new in</button>
+  </div>
+
+  <div class="slider-container">
+    <ng-image-slider
+      [images]="imageObject"
+      #nav
+      [imageSize]="{ width: '230px', height: '300px' }"
+    ></ng-image-slider>
+  </div>
+</div>

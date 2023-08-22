@@ -1,0 +1,56 @@
+@import "../../../../../assets/styles/variables";
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 78vw;
+  margin: 60px auto;
+
+  .essentials {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .header {
+      font-size: 28px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      letter-spacing: 8px;
+      color: $font-color;
+      font-weight: 300;
+    }
+
+    .paragraph {
+      font-size: 16px;
+      margin-bottom: 32px;
+      color: $font-color;
+      line-height: 24px;
+      letter-spacing: 0.8px;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    .btn {
+      font-size: 16px;
+      padding: 10px 40px;
+      background-color: #223532;
+      border: 1px solid #223532;
+      color: $white-color;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-weight: 500;
+
+      &:hover {
+        background-color: $white-color;
+        color: #223532;
+      }
+    }
+  }
+
+  .slider-container {
+    width: 55%;
+  }
+}
