@@ -7,12 +7,20 @@
   width: 78vw;
   margin: 60px auto;
 
-  .essentials {
-    width: 43%;
+  .focus-clothes {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    width: 38%;
+
+    .text {
+      font-size: 18px;
+      font-weight: 300;
+      letter-spacing: 4px;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+    }
 
     .header {
       font-size: 25px;
@@ -51,7 +59,11 @@
     }
   }
 
-  .slider-container {
-    width: 55%;
+  .image-container {
+    width: 60%;
+
+    .img {
+      width: 100%;
+    }
   }
 }

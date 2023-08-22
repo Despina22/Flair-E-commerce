@@ -42,10 +42,16 @@
       padding: 10px 40px;
       font-size: 18px;
       letter-spacing: 6px;
-      border: none;
+      border: 1px solid $white-color;
       text-transform: uppercase;
       font-weight: 500;
       cursor: pointer;
+      transition: all 0.4s;
+
+      &:hover {
+        background-color: transparent;
+        color: $white-color;
+      }
     }
   }
 }
