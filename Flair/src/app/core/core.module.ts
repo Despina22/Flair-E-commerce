@@ -5,11 +5,14 @@ import { MatIconModule } from '@angular/material/icon';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { MatBadgeModule } from '@angular/material/badge';
 import { FooterComponent } from './components/footer/footer.component';
+import { HomepageComponent } from './layouts/components/homepage/homepage.component';
+import { FeaturesModule } from '../features/features.module';
+import { LoginComponent } from './auth/components/login/login.component';
 
 const COMPONENTS = [HeaderComponent, NavigationComponent, FooterComponent];
 @NgModule({
-  declarations: [...COMPONENTS],
-  imports: [CommonModule, MatIconModule, MatBadgeModule],
+  declarations: [...COMPONENTS, HomepageComponent, LoginComponent],
+  imports: [CommonModule, MatIconModule, MatBadgeModule, FeaturesModule],
   exports: [...COMPONENTS],
 })
 export class CoreModule {}
