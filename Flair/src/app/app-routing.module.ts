@@ -6,6 +6,13 @@ import { LoginComponent } from './core/auth/components/login/login.component';
 const routes: Routes = [
   { path: '', component: HomepageComponent },
   { path: 'login', component: LoginComponent },
+  {
+    path: 'clothing',
+    loadChildren: () =>
+      import('../app/features/clothes/clothes.module').then(
+        (module) => module.ClothesModule
+      ),
+  },
 ];
 
 @NgModule({

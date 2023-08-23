@@ -1,0 +1,460 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "SASKIA TRENCH",
+      "price": 199,
+      "size": "M, L, XL",
+      "stars": "4",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dw8ca94db3/images/0223-3991-9057L00/0223-3991-9057L00-SASKIA-TRENCH-WARM-PLUM_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 1
+    },
+    {
+      "id": 2,
+      "name": "CLARISSE WOOL BLEND COAT",
+      "price": 359,
+      "size": "XS, S, M",
+      "stars": "5",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dw022f6242/images/0223-3781-9044L00/0223-3781-9044L00-CLARISSE-COAT-GREEN_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 1
+    },
+    {
+      "id": 3,
+      "name": "LIVIA WOOL COAT",
+      "price": 359,
+      "size": "S,M,L",
+      "stars": "5",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dw4c324ab1/images/0223-3395-1049L00/0223-3395-1049L00-LIVIA-WOOL-COAT-CAMEL_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 1
+    },
+    {
+      "id": 4,
+      "name": "ELIZE TEXTURED JACKET",
+      "price": 139,
+      "size": "XS,S,M,L",
+      "stars": "5",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dw0a7c1d37/images/0123-4505-9045L00/0123-4505-9045L00-ELIZE-JACKET-MIDNIGHT-NAVY_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 1
+    },
+    {
+      "id": 5,
+      "name": "SASKIA WATER RESISTANT TRENCH COAT",
+      "price": 199,
+      "size": "S,M,XL",
+      "stars": "4",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dw56c004ba/images/0122-3991-9057L00/0122-3991-9057L00-SASKIA-TRENCH-TAN_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 1
+    },
+    {
+      "id": 6,
+      "name": "FLORENCE COAT",
+      "price": 189,
+      "size": "S,M,XL",
+      "stars": "3",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dw33679328/images/0223-3443-9045L00/0223-3443-9045L00-FLORENCE-COAT-SILVER_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 1
+    },
+    {
+      "id": 7,
+      "name": "PETITE SASKIA TRENCH",
+      "price": 199,
+      "size": "XS,S,M,L",
+      "stars": "5",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dwf0b81fc6/images/0122-3991-9057L04/0122-3991-9057L04-PETITE-SASKIA-TRENCH-NAVY_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 1
+    },
+    {
+      "id": 8,
+      "name": "TILDA WOOL COAT",
+      "price": 299,
+      "size": "S",
+      "stars": "5",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dw092899bd/images/0223-3528-1049L00/0223-3528-1049L00-TILDA-COAT-STEEL-BLUE_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 1
+    },
+    {
+      "id": 9,
+      "name": "ROMY JACKET",
+      "price": 169,
+      "size": "L",
+      "stars": "5",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dw1e83cd38/images/0223-4710-9845L00/0223-4710-9845L00-ROMY-JACKET-RICH-NAVY-BLUE_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 1
+    },
+    {
+      "id": 10,
+      "name": "ELIZE CREPE JACKET",
+      "price": 139,
+      "size": "M",
+      "stars": "5",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dw773b8473/images/0223-4505-9845L01/0223-4505-9845L01-ELIZE-CREPE-JACKET-IVORY_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 1
+    },
+    {
+      "id": 11,
+      "name": "BLAIR WOOL BLEND COAT",
+      "price": 349,
+      "size": "S",
+      "stars": "5",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dw1d2eb336/images/0223-3751-9044L00/0223-3751-9044L00-BLAIR-COAT-BLACK_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 1
+    },
+    {
+      "id": 12,
+      "name": "DANIELLA WOOL JACKET",
+      "price": 199,
+      "size": "M",
+      "stars": "5",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dwb67a63e8/images/0223-4198-1049L00/0223-4198-1049L00-DANIELLA-JACKET-PINK-MULTI_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 1
+    },
+    {
+      "id": 13,
+      "name": "MARISSA WOOL COAT",
+      "price": 299,
+      "size": "S,M",
+      "stars": "4",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dw04f866d9/images/0223-3727-1049L00/0223-3727-1049L00-MARISSA-COAT-WARM-PLUM_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 1
+    },
+    {
+      "id": 14,
+      "name": "PETITE CLARISSE WOOL BLEND COAT",
+      "price": 359,
+      "size": "M,L",
+      "stars": "4",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dw96c73d3d/images/0223-3781-9044L04/0223-3781-9044L04-PETITE-CLARISSE-COAT-GREEN_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 1
+    },
+    {
+      "id": 15,
+      "name": "CHARA FIT AND FLARE COAT",
+      "price": 249,
+      "size": "S,M",
+      "stars": "5",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dwa7bfd2b0/images/0223-3744-9845L00/0223-3744-9845L00-CHARA-COAT-PALE-PINK_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 1
+    },
+
+    {
+      "id": 16,
+      "name": "AIMEE DOUBLE FRONTED TOP",
+      "price": 39,
+      "size": "S,M",
+      "stars": "5",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dwb6d3b2fa/images/0121-2249-3669L00/0121-2249-3669L00-AIMEE-TOP-IVORY_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 2
+    },
+    {
+      "id": 17,
+      "name": "MISCHA ROLL NECK",
+      "price": 39,
+      "size": "S,M,XL",
+      "stars": "4",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dw147dde89/images/0223-2070-3669L00/0223-2070-3669L00-MISCHA-ROLL-NECK-OCHRE-YELLOW_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 2
+    },
+    {
+      "id": 18,
+      "name": "JUNE BLOUSE",
+      "price": 89,
+      "size": "M, L, XL",
+      "stars": "5",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dwfbd87d0a/images/0223-6929-9324L00/0223-6929-9324L00-JUNE-BLOUSE-MULTI_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 2
+    },
+    {
+      "id": 19,
+      "name": "DELANY BLOUSE",
+      "price": 79,
+      "size": "XS, S, M",
+      "stars": "5",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dw2ec1ab38/images/0223-6579-9045L00/0223-6579-9045L00-DELANY-BLOUSE-GREEN-IVORY_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 2
+    },
+    {
+      "id": 20,
+      "name": "PIXIE COTTON T-SHIRT",
+      "price": 25,
+      "size": "XS,S,M,L",
+      "stars": "5",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dwc9f29870/images/0120-2335-1144L00/0120-2335-1144L00-PIXIE-COTTON-T-SHIRT-WHITE_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 2
+    },
+    {
+      "id": 21,
+      "name": "GLORIA BLOUSE",
+      "price": 79,
+      "size": "M, L, XL",
+      "stars": "4",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dw5ccc28d1/images/0223-6947-9324L00/0223-6947-9324L00-GLORIA-BLOUSE-RED-PINK_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 2
+    },
+    {
+      "id": 22,
+      "name": "ESMERALDA BLOUSE",
+      "price": 65,
+      "size": "S,M",
+      "stars": "5",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dw1c4ee5e4/images/0223-6952-9045L00/0223-6952-9045L00-ESMERALDA-BLOUSE-IVORY-BLACK_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 2
+    },
+    {
+      "id": 23,
+      "name": "NYLA TOP",
+      "price": 59,
+      "size": "XS, S, M",
+      "stars": "2",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dwf05f9c7e/images/0223-2455-9083L00/0223-2455-9083L00-NYLA-TOP-CURRENT-RED_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 2
+    },
+    {
+      "id": 24,
+      "name": "VICTORIA SHIRT",
+      "price": 75,
+      "size": "M",
+      "stars": "3",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dw9574a69c/images/0223-6080-9083L00/0223-6080-9083L00-VICTORIA-SHIRT-WHITE_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 2
+    },
+    {
+      "id": 25,
+      "name": "LOUISA TOP",
+      "price": 55,
+      "size": "XS,S,M,L",
+      "stars": "4",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dwf8f99ca0/images/0223-2702-9324L00/0223-2702-9324L00-LOUISA-TOP-NAVY_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 2
+    },
+    {
+      "id": 26,
+      "name": "CASSANDRA BLOUSE",
+      "price": 99,
+      "size": "XS,S,M,L",
+      "stars": "5",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dw370ca61b/images/0223-6950-9045L00/0223-6950-9045L00-CASSANDRA-BLOUSE-IVORY-MULTI_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 2
+    },
+    {
+      "id": 27,
+      "name": "ROSALYN BLOUSE",
+      "price": 89,
+      "size": "S,M",
+      "stars": "5",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dwef62313a/images/0223-6949-9045L00/0223-6949-9045L00-ROSALYN-BLOUSE-CHERRY-PINK_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 2
+    },
+    {
+      "id": 28,
+      "name": "CHIARA TOP",
+      "price": 45,
+      "size": "L",
+      "stars": "5",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dwdd5cba6c/images/0223-2850-9324L00/0223-2850-9324L00-CHIARA-TOP-MULTI_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 2
+    },
+    {
+      "id": 29,
+      "name": "KATELENA TOP",
+      "price": 45,
+      "size": "S,M",
+      "stars": "3",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dwe8daa060/images/0223-2558-9083L00/0223-2558-9083L00-KATELENA-TOP-LEMON-ZEST_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 2
+    },
+    {
+      "id": 30,
+      "name": "ALBA TOP",
+      "price": 39,
+      "size": "S,M",
+      "stars": "5",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dwf67a8e1b/images/0223-2827-9324L00/0223-2827-9324L00-ALBA-TOP-ELECTRIC-BLUE_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 2
+    },
+    {
+      "id": 31,
+      "name": "BETSY TOP",
+      "price": 59,
+      "size": "S,M",
+      "stars": "4",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dw48924d29/images/0223-2846-9083L01/0223-2846-9083L01-BETSY-TOP-ANTIQUE-BLUE_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 2
+    },
+    {
+      "id": 32,
+      "name": "NELLE TOP",
+      "price": 79,
+      "size": "M",
+      "stars": "5",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dw80b86223/images/0223-6953-9045L00/0223-6953-9045L00-NELLE-TOP-IVORY-BLACK_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 2
+    },
+    {
+      "id": 33,
+      "name": "DELANY BLOUSE",
+      "price": 79,
+      "size": "S",
+      "stars": "5",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dwd656d814/images/0223-6579-9045L00/0223-6579-9045L00-DELANY-BLOUSE-IVORY-PECAN_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 2
+    },
+
+    {
+      "id": 34,
+      "name": "REENA RIBBED KNITTED CARDIGAN",
+      "price": 75,
+      "size": "XS, S, M",
+      "stars": "4",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dw114d3b34/images/0223-9376-1085L00/0223-9376-1085L00-REENA-RIBBED-CARDIGAN-BERRY-RED_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 3
+    },
+
+    {
+      "id": 35,
+      "name": "MICHELLE COTTON CARDIGAN",
+      "price": 59,
+      "size": "S",
+      "stars": "5",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dw9ddf5797/images/0223-9795-1144L00/0223-9795-1144L00-MICHELLE-CARDIGAN-VIOLET-PINK_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 3
+    },
+
+    {
+      "id": 36,
+      "name": "ELLA CARDIGAN",
+      "price": 69,
+      "size": "M",
+      "stars": "5",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dw8daf6e41/images/0119-9466-1124L00/0119-9466-1124L00-ELLA-CARDIGAN-MIDNIGHT_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 3
+    },
+
+    {
+      "id": 37,
+      "name": "LARA MERINO WOOL ROLL NECK JUMPER",
+      "price": 79,
+      "size": "S",
+      "stars": "3",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dw852d97e7/images/0223-9301-1049L00/0223-9301-1049L00-LARA-ROLL-NECK-JUMPER-PINK_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 3
+    },
+
+    {
+      "id": 38,
+      "name": "TALIA JUMPER",
+      "price": 89,
+      "size": "XS, S, M",
+      "stars": "4",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dw38f318c7/images/0223-9653-9044L00/0223-9653-9044L00-TALIA-JUMPER-CADMIUM-GREEN_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 3
+    },
+
+    {
+      "id": 39,
+      "name": "AUDREY WOOL CASHMERE JUMPER",
+      "price": 89,
+      "size": "S,M",
+      "stars": "5",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dw1f995006/images/0223-9406-9044L00/0223-9406-9044L00-AUDREY-JUMPER-PINK-MARL_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 3
+    },
+
+    {
+      "id": 40,
+      "name": "HADLEY COTTON JUMPER",
+      "price": 79,
+      "size": "M, L, XL",
+      "stars": "5",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dwf3a14825/images/0223-9399-1144L00/0223-9399-1144L00-HADLEY-JUMPER-IVORY_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 3
+    },
+
+    {
+      "id": 41,
+      "name": "SANTANA JUMPER",
+      "price": 89,
+      "size": "XS,S,M,L",
+      "stars": "4",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dw23a7f2a5/images/0223-9419-1144L00/0223-9419-1144L00-SANTANA-JUMPER-NAVY-MULTI_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 3
+    },
+
+    {
+      "id": 42,
+      "name": "AXELLE CABLE CARDIGAN",
+      "price": 119,
+      "size": "M,L",
+      "stars": "5",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dwc61759e2/images/0223-9432-3072L00/0223-9432-3072L00-AXELLE-CABLE-CARDIGAN-CHARCOAL_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 3
+    },
+
+    {
+      "id": 43,
+      "name": "HAZEL JUMPER",
+      "price": 89,
+      "size": "S,M,L",
+      "stars": "5",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dwf572edf3/images/0223-9396-9083L00/0223-9396-9083L00-HAZEL-JUMPER-PLUM-PINK_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 3
+    },
+
+    {
+      "id": 44,
+      "name": "MARTHA COTTON JUMPER",
+      "price": 89,
+      "size": "S",
+      "stars": "5",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dwff63be5b/images/0223-9397-1144L00/0223-9397-1144L00-MARTHA-JUMPER-IVORY-NAVY_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 3
+    },
+
+    {
+      "id": 45,
+      "name": "CAMILLA COTTON JUMPER",
+      "price": 79,
+      "size": "M",
+      "stars": "5",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dwb06775ac/images/0123-9748-1144L00/0123-9748-1144L00-CAMILLA-CABLE-JUMPER-CLEARWATER-BLUE_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 3
+    },
+
+    {
+      "id": 46,
+      "name": "MARIANNA JUMPER WITH MERINO WOOL",
+      "price": 79,
+      "size": "S",
+      "stars": "5",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dwc2899b6b/images/0223-9357-9044L00/0223-9357-9044L00-MARIANNA-JUMPER-CAMEL_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 3
+    },
+
+    {
+      "id": 47,
+      "name": "MALIA COATIGAN",
+      "price": 139,
+      "size": "S,M",
+      "stars": "5",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dwb55db82a/images/0223-9382-1085L00/0223-9382-1085L00-MALIA-COATIGAN-HOBBS-CAMEL_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 3
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "jackets"
+    },
+    {
+      "id": 2,
+      "name": "tops"
+    },
+    {
+      "id": 3,
+      "name": "knitwear"
+    },
+    {
+      "id": 4,
+      "name": "dresses"
+    }
+  ]
+}

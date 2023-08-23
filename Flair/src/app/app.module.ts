@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent],
@@ -14,6 +15,7 @@ import { CoreModule } from './core/core.module';
     CoreModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    HttpClientModule,
     RouterModule,
   ],
   providers: [],

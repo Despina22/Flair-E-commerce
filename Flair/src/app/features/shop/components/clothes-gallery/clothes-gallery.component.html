@@ -5,7 +5,10 @@
       alt="jackets"
       class="img"
     />
-    <div class="header-container">
+    <div
+      class="header-container"
+      (click)="navigateToCategory(categories.JACKETS)"
+    >
       <h3 class="header">Coats & Jackets</h3>
     </div>
   </div>
@@ -16,7 +19,9 @@
       alt="tops"
       class="img"
     />
-    <h3 class="header">Tops</h3>
+    <div class="header-container" (click)="navigateToCategory(categories.TOPS)">
+      <h3 class="header">Tops</h3>
+    </div>
   </div>
 
   <div class="container">
@@ -25,6 +30,11 @@
       alt="knitwear"
       class="img"
     />
-    <h3 class="header">Knitwear</h3>
+    <div
+      class="header-container"
+      (click)="navigateToCategory(categories.KNITWEAR)"
+    >
+      <h3 class="header">Knitwear</h3>
+    </div>
   </div>
 </div>

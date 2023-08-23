@@ -1,0 +1,81 @@
+@import "../../../../../assets/styles/variables";
+
+.row {
+  background-color: #212f39;
+  padding: 5px;
+
+  .paragraph {
+    font-size: 14px;
+    color: $white-color;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.container {
+  display: flex;
+  width: 70vw;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px auto;
+
+  .text {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 0;
+
+    span {
+      font-weight: 500;
+    }
+  }
+
+  .input-field {
+    width: 250px;
+    font-size: 14px;
+    color: $icons-color;
+    padding: 8px 10px;
+  }
+}
+
+.clothes-container {
+  width: 96vw;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0px auto;
+
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 5px 25px;
+
+    .img {
+      width: 410px;
+      margin-bottom: 25px;
+    }
+
+    .product-name {
+      max-width: 350px;
+      text-align: center;
+      font-weight: 300;
+      letter-spacing: 4px;
+    }
+
+    .price {
+      font-size: 16px;
+      font-weight: 300;
+      letter-spacing: 0.8px;
+    }
+
+    .icon {
+      position: absolute;
+      top: 3%;
+      right: 6%;
+      cursor: pointer;
+    }
+  }
+}
