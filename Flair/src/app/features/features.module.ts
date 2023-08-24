@@ -2,11 +2,11 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
 import { NgImageSliderModule } from 'ng-image-slider';
-import { VideoOverlayComponent } from './components/video-overlay/video-overlay.component';
 import { FeaturesRoutingModule } from './features-routing.module';
-import { ClothesEssentialsComponent } from './shop/components/clothes-essentials/clothes-essentials.component';
-import { ClothesFocusComponent } from './shop/components/clothes-focus/clothes-focus.component';
-import { ClothesGalleryComponent } from './shop/components/clothes-gallery/clothes-gallery.component';
+import { ClothesEssentialsComponent } from './homepage/components/clothes-essentials/clothes-essentials.component';
+import { ClothesFocusComponent } from './homepage/components/clothes-focus/clothes-focus.component';
+import { ClothesGalleryComponent } from './homepage/components/clothes-gallery/clothes-gallery.component';
+import { VideoOverlayComponent } from './homepage/components/video-overlay/video-overlay.component';
 
 const COMPONENTS = [
   VideoOverlayComponent,

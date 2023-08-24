@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Slider } from 'src/app/features/interfaces/slider.interface';
+import { Slider } from 'src/app/features/homepage/interfaces/slider.interface';
 
 @Component({
   selector: 'app-clothes-essentials',

@@ -1,0 +1,69 @@
+@import "../../../../../assets/styles/variables";
+
+.row {
+  background-color: #212f39;
+  padding: 5px;
+
+  .paragraph {
+    font-size: 14px;
+    color: $white-color;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.wrapper {
+  .header {
+    position: relative;
+    overflow: hidden;
+    color: $font-color;
+    background-color: transparent;
+    font-size: 22px;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    cursor: default;
+    margin: 20px 50px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      bottom: 3px;
+      border-top: 1px solid #cbc7bf;
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+
+    .header-2 {
+      font-size: 14px;
+      font-weight: 200;
+      letter-spacing: 6px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .btn {
+      font-size: 16px;
+      padding: 10px 40px;
+      background-color: #223532;
+      border: 1px solid #223532;
+      color: $white-color;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-weight: 500;
+      transition: all 0.4s;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $white-color;
+        color: #223532;
+      }
+    }
+  }
+}

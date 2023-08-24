@@ -1,16 +1,23 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomepageComponent } from './core/layouts/components/homepage/homepage.component';
+import { LandingPageComponent } from './core/layouts/components/homepage/landing-page.component';
 import { LoginComponent } from './core/auth/components/login/login.component';
 
 const routes: Routes = [
-  { path: '', component: HomepageComponent },
+  { path: '', component: LandingPageComponent },
   { path: 'login', component: LoginComponent },
   {
     path: 'clothing',
     loadChildren: () =>
       import('../app/features/clothes/clothes.module').then(
         (module) => module.ClothesModule
+      ),
+  },
+  {
+    path: 'shop',
+    loadChildren: () =>
+      import('../app/features/shop/shop.module').then(
+        (module) => module.ShopModule
       ),
   },
 ];

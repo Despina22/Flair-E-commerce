@@ -455,6 +455,15 @@
     {
       "id": 4,
       "name": "dresses"
+    },
+    {
+      "id": 5,
+      "name": "shoes"
+    },
+    {
+      "id": 6,
+      "name": "accessories"
     }
-  ]
+  ],
+  "wishlist": []
 }

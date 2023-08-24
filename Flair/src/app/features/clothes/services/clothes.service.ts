@@ -40,4 +40,8 @@ export class ClothesService {
       })
     );
   }
+
+  getProductsById(id: number): Observable<Clothes[]> {
+    return this.http.get<Clothes[]>(`${this.clothesUrl}products/${id}`);
+  }
 }
