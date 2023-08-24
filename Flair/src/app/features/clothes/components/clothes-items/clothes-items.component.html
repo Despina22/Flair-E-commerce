@@ -23,6 +23,8 @@
     <h3 class="product-name">{{ product.name }}</h3>
     <p class="price">{{ product.price | currency : "GBP" }}</p>
     <app-star-rating [rating]="product.stars"></app-star-rating>
-    <mat-icon class="icon">favorite_border</mat-icon>
+    <mat-icon class="icon" (click)="addToWishlist(product)"
+      >favorite_border</mat-icon
+    >
   </div>
 </div>

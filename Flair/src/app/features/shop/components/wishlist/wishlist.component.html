@@ -4,10 +4,45 @@
 
 <div class="wrapper">
   <h1 class="header">MY WISHLIST</h1>
-  <div class="container">
+  <div class="container" *ngIf="isWishlistEmpty">
     <h2 class="header-2">
       OH NO! YOU HAVE NO STYLES IN YOUR WISHLIST YET. TIME TO FIX THAT…
     </h2>
-    <button class="btn">Start shopping</button>
+    <button class="btn" routerLink="/">Start shopping</button>
+  </div>
+  <div class="container" *ngIf="!isWishlistEmpty">
+    <h2 class="header-2">ALL YOUR MOST-LOVED STYLES, IN ONE PLACE.</h2>
+    <div class="wishlistItems">
+      <ng-container *ngFor="let wishlistItem of wishlistItems">
+        <div class="card">
+          <img
+            [src]="wishlistItem.imageUrl"
+            [alt]="wishlistItem.name"
+            class="img"
+          />
+          <mat-icon class="icon" (click)="removeItem(wishlistItem)"
+            >close</mat-icon
+          >
+          <h3 class="title">{{ wishlistItem.name }}</h3>
+          <p class="price">{{ wishlistItem.price | currency : "GBP" }}</p>
+          <app-star-rating [rating]="wishlistItem.stars"></app-star-rating>
+          <div>
+            <select class="select-field" #sizeSelect>
+              <option value="size" hidden>Select a Size</option>
+              <option *ngFor="let size of wishlistItem.size" [value]="size">
+                {{ size }}
+              </option>
+            </select>
+          </div>
+          <button
+            class="add-btn"
+            [disabled]="sizeSelect.value === ''"
+            (click)="addItem()"
+          >
+            Add
+          </button>
+        </div>
+      </ng-container>
+    </div>
   </div>
 </div>

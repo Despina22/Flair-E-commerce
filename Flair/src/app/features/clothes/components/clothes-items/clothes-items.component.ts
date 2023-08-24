@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Clothes } from '../../interfaces/clothes.interface';
 import { ActivatedRoute } from '@angular/router';
 import { ClothesService } from '../../services/clothes.service';
+import { WishlistService } from 'src/app/features/shop/services/wishlist.service';
+import { BehaviorSubject, take } from 'rxjs';
 
 @Component({
   selector: 'app-clothes-items',
@@ -11,10 +13,12 @@ import { ClothesService } from '../../services/clothes.service';
 export class ClothesItemsComponent implements OnInit {
   products?: Clothes[];
   productsLength?: number;
+  icon = 'favorite_border';
 
   constructor(
     private route: ActivatedRoute,
-    private clothesService: ClothesService
+    private clothesService: ClothesService,
+    private wishlistService: WishlistService
   ) {}
 
   ngOnInit() {
@@ -28,5 +32,9 @@ export class ClothesItemsComponent implements OnInit {
           this.productsLength = this.products.length;
         });
     });
+  }
+
+  addToWishlist(product: Clothes) {
+    this.wishlistService.addToWishlist(product).pipe(take(1)).subscribe();
   }
 }
