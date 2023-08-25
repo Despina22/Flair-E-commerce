@@ -3,11 +3,11 @@ import { Router } from '@angular/router';
 import { Categories } from 'src/app/features/clothes/enums/category.enum';
 
 @Component({
-  selector: 'app-clothes-gallery',
-  templateUrl: './clothes-gallery.component.html',
-  styleUrls: ['./clothes-gallery.component.scss'],
+  selector: 'app-products-gallery',
+  templateUrl: './products-gallery.component.html',
+  styleUrls: ['./products-gallery.component.scss'],
 })
-export class ClothesGalleryComponent implements OnInit {
+export class ProductsGalleryComponent implements OnInit {
   categories = Categories;
 
   constructor(private router: Router) {}

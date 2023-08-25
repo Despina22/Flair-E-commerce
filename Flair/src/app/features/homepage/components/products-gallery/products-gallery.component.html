@@ -1,39 +1,33 @@
 <div class="wrapper">
-  <div class="container">
+  <div class="container" (click)="navigateToCategory(categories.JACKETS)">
     <img
       src="../../../../../assets/images/cat-image-01.webp"
       alt="jackets"
       class="img"
     />
-    <div
-      class="header-container"
-      (click)="navigateToCategory(categories.JACKETS)"
-    >
+    <div class="header-container">
       <h3 class="header">Coats & Jackets</h3>
     </div>
   </div>
 
-  <div class="container">
+  <div class="container" (click)="navigateToCategory(categories.TOPS)">
     <img
       src="../../../../../assets/images/cat-image-02.webp"
       alt="tops"
       class="img"
     />
-    <div class="header-container" (click)="navigateToCategory(categories.TOPS)">
+    <div class="header-container">
       <h3 class="header">Tops</h3>
     </div>
   </div>
 
-  <div class="container">
+  <div class="container" (click)="navigateToCategory(categories.KNITWEAR)">
     <img
       src="../../../../../assets/images/cat-image-03.webp"
       alt="knitwear"
       class="img"
     />
-    <div
-      class="header-container"
-      (click)="navigateToCategory(categories.KNITWEAR)"
-    >
+    <div class="header-container">
       <h3 class="header">Knitwear</h3>
     </div>
   </div>

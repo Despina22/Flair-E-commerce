@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Slider } from 'src/app/features/homepage/interfaces/slider.interface';
 
 @Component({
-  selector: 'app-clothes-essentials',
-  templateUrl: './clothes-essentials.component.html',
-  styleUrls: ['./clothes-essentials.component.scss'],
+  selector: 'app-product-essentials',
+  templateUrl: './product-essentials.component.html',
+  styleUrls: ['./product-essentials.component.scss'],
 })
-export class ClothesEssentialsComponent implements OnInit {
+export class ProductEssentialsComponent implements OnInit {
   imageObject: Slider[] = [
     {
       image: '../../../../../assets/images/car-1.webp',

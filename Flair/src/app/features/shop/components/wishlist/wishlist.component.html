@@ -4,13 +4,13 @@
 
 <div class="wrapper">
   <h1 class="header">MY WISHLIST</h1>
-  <div class="container" *ngIf="isWishlistEmpty">
+  <div class="container" *ngIf="isWishlistEmpty$ | async">
     <h2 class="header-2">
       OH NO! YOU HAVE NO STYLES IN YOUR WISHLIST YET. TIME TO FIX THAT…
     </h2>
     <button class="btn" routerLink="/">Start shopping</button>
   </div>
-  <div class="container" *ngIf="!isWishlistEmpty">
+  <div class="container" *ngIf="!(isWishlistEmpty$ | async)">
     <h2 class="header-2">ALL YOUR MOST-LOVED STYLES, IN ONE PLACE.</h2>
     <div class="wishlistItems">
       <ng-container *ngFor="let wishlistItem of wishlistItems">

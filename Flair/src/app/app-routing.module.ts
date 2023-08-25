@@ -9,8 +9,8 @@ const routes: Routes = [
   {
     path: 'clothing',
     loadChildren: () =>
-      import('../app/features/clothes/clothes.module').then(
-        (module) => module.ClothesModule
+      import('./features/clothes/products.module').then(
+        (module) => module.ProductsModule
       ),
   },
   {

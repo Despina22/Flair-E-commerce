@@ -3,15 +3,18 @@
 .wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 78vw;
   margin: 30px auto;
 
   .container {
     position: relative;
     overflow: hidden;
+    margin: 10px 5px;
 
     .img {
-      max-width: 350px;
+      max-width: 340px;
+      cursor: pointer;
     }
 
     &:hover .img {

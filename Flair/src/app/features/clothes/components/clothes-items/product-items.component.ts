@@ -1,23 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import { Clothes } from '../../interfaces/clothes.interface';
 import { ActivatedRoute } from '@angular/router';
-import { ClothesService } from '../../services/clothes.service';
+import { ProductService } from '../../services/product.service';
 import { WishlistService } from 'src/app/features/shop/services/wishlist.service';
 import { BehaviorSubject, take } from 'rxjs';
 
 @Component({
-  selector: 'app-clothes-items',
-  templateUrl: './clothes-items.component.html',
-  styleUrls: ['./clothes-items.component.scss'],
+  selector: 'app-product-items',
+  templateUrl: './product-items.component.html',
+  styleUrls: ['./product-items.component.scss'],
 })
-export class ClothesItemsComponent implements OnInit {
+export class ProductItemsComponent implements OnInit {
   products?: Clothes[];
   productsLength?: number;
-  icon = 'favorite_border';
 
   constructor(
     private route: ActivatedRoute,
-    private clothesService: ClothesService,
+    private clothesService: ProductService,
     private wishlistService: WishlistService
   ) {}
 

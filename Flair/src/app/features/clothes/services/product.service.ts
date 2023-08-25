@@ -8,7 +8,7 @@ import { Category } from '../interfaces/category.interface';
 @Injectable({
   providedIn: 'root',
 })
-export class ClothesService {
+export class ProductService {
   private readonly clothesUrl: string = `${environment.baseApiUrl}`;
 
   constructor(private http: HttpClient) {}
@@ -24,7 +24,6 @@ export class ClothesService {
     return forkJoin<[Category[], Clothes[]]>([categories$, products$]).pipe(
       map(([categories, products]) => {
         const category = categories.find((cat) => cat.id === categoryId);
-        console.log(category);
 
         if (category) {
           return products.filter(

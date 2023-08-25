@@ -602,5 +602,32 @@
       "name": "accessories"
     }
   ],
-  "wishlist": []
+  "wishlist": [
+    {
+      "id": 1,
+      "name": "SASKIA TRENCH",
+      "price": 199,
+      "size": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "stars": "4",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dw8ca94db3/images/0223-3991-9057L00/0223-3991-9057L00-SASKIA-TRENCH-WARM-PLUM_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 1
+    },
+    {
+      "id": 2,
+      "name": "CLARISSE WOOL BLEND COAT",
+      "price": 359,
+      "size": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "stars": "5",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dw022f6242/images/0223-3781-9044L00/0223-3781-9044L00-CLARISSE-COAT-GREEN_02.jpg?sw=571&sh=800&strip=false",
+      "categoryId": 1
+    }
+  ]
 }

@@ -1,4 +1,4 @@
-import { take } from 'rxjs';
+import { BehaviorSubject, take } from 'rxjs';
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Clothes } from 'src/app/features/clothes/interfaces/clothes.interface';
 import { WishlistService } from '../../services/wishlist.service';
@@ -9,7 +9,9 @@ import { WishlistService } from '../../services/wishlist.service';
   styleUrls: ['./wishlist.component.scss'],
 })
 export class WishlistComponent implements OnInit {
-  isWishlistEmpty: boolean = true;
+  isWishlistEmpty$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(
+    true
+  );
   wishlistItems?: Clothes[];
 
   constructor(private wishlistService: WishlistService) {}
@@ -18,14 +20,22 @@ export class WishlistComponent implements OnInit {
     this.getWishlistItems();
   }
 
+  checkIsWishlistEmpty() {
+    if (!this.wishlistItems || this.wishlistItems.length === 0) {
+      this.isWishlistEmpty$.next(true);
+    }
+  }
+
   getWishlistItems() {
     this.wishlistService
       .getWishlist()
       .pipe(take(1))
       .subscribe((data) => {
         if (data?.length) {
-          this.isWishlistEmpty = false;
+          this.isWishlistEmpty$.next(false);
           this.wishlistItems = data;
+        } else {
+          this.checkIsWishlistEmpty();
         }
       });
   }
@@ -42,6 +52,8 @@ export class WishlistComponent implements OnInit {
         this.wishlistItems = this.wishlistItems?.filter(
           (wishlistItem) => wishlistItem !== item
         );
+
+        this.checkIsWishlistEmpty();
       });
   }
 }
