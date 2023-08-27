@@ -1,9 +1,11 @@
 <div class="wrapper">
   <ul class="links">
-    <li class="link">New In</li>
+    <li class="link" routerLink="/">Home</li>
     <li class="link">Clothing</li>
-    <li class="link">Shoes</li>
-    <li class="link">Accessories</li>
+    <li class="link" (click)="navigateToCategory(categories.SHOES)">Shoes</li>
+    <li class="link" (click)="navigateToCategory(categories.ACCESSORIES)">
+      Accessories
+    </li>
     <li class="link">Inspire Me</li>
   </ul>
 </div>

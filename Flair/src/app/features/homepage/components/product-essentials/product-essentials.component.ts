@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Categories } from 'src/app/features/clothes/enums/category.enum';
 import { Slider } from 'src/app/features/homepage/interfaces/slider.interface';
 
 @Component({
@@ -39,7 +41,13 @@ export class ProductEssentialsComponent implements OnInit {
       alt: 'img-6',
     },
   ];
-  constructor() {}
+  categories = Categories;
+
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
+
+  navigateToCategory(categoryId: number) {
+    this.router.navigate(['clothing', categoryId]);
+  }
 }
