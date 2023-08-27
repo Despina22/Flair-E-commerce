@@ -1,0 +1,48 @@
+<div class="row">
+  <p class="paragraph">See Out Latest Arrivals</p>
+</div>
+
+<div class="wrapper">
+  <div class="container" *ngIf="isBagEmpty">
+    <h2 class="header-2">YOU DON’T HAVE ANYTHING IN YOUR BAG YET</h2>
+    <button class="btn" routerLink="/">Start shopping</button>
+  </div>
+
+  <div class="basket-wrapper" *ngIf="!isBagEmpty">
+    <div class="bag-container">
+      <h1 class="header">YOUR BASKET</h1>
+      <div class="bagItems">
+        <div class="bag" *ngFor="let item of bagItems">
+          <div class="image">
+            <img
+              [src]="item.product.imageUrl"
+              [alt]="item.product.name"
+              class="img"
+            />
+          </div>
+          <div class="product-info">
+            <h3 class="header-info">{{ item.product.name }}</h3>
+            <p class="paragraph">In stock</p>
+            <p class="price">{{ item.product.price | currency : "GBP" }}</p>
+          </div>
+          <div class="product-quantity">
+            <select name="quantity" class="input-field">
+              <option value="">Quantity</option>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+            </select>
+            <p>Selected size: {{ item.selectedSize }}</p>
+            <p class="remove-btn" (click)="removeItem(item)">Remove</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bag-container">
+      <h1 class="header">Summary</h1>
+      <div class="bagItems"></div>
+    </div>
+  </div>
+</div>

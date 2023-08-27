@@ -1,0 +1,132 @@
+@import "../../../../../assets/styles/variables";
+
+.row {
+  background-color: #212f39;
+  padding: 5px;
+
+  .paragraph {
+    font-size: 14px;
+    color: $white-color;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.wrapper {
+  width: 95vw;
+  margin: auto;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0 40px;
+
+    .header-2 {
+      font-size: 14px;
+      font-weight: 200;
+      letter-spacing: 6px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .btn {
+      font-size: 16px;
+      padding: 10px 40px;
+      background-color: #223532;
+      border: 1px solid #223532;
+      color: $white-color;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-weight: 500;
+      transition: all 0.4s;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $white-color;
+        color: #223532;
+      }
+    }
+  }
+
+  .basket-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .bag-container {
+      width: 50%;
+
+      .header {
+        position: relative;
+        overflow: hidden;
+        color: $font-color;
+        background-color: transparent;
+        font-size: 22px;
+        font-weight: 200;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        cursor: default;
+        margin: 20px 50px;
+
+        &:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          bottom: 3px;
+          border-top: 1px solid #cbc7bf;
+        }
+      }
+
+      .bagItems {
+        .bag {
+          display: flex;
+          justify-content: space-between;
+          padding: 0 40px;
+          border-bottom: 1px solid $icons-color;
+          margin-bottom: 20px;
+
+          .image {
+            width: 90px;
+            .img {
+              width: 85px;
+              height: 120px;
+            }
+          }
+
+          .product-info {
+            width: 300px;
+            padding: 0 20px;
+            .header-info,
+            .paragraph,
+            .price {
+              color: $icons-color;
+              letter-spacing: 1px;
+            }
+          }
+
+          .product-quantity {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            width: 220px;
+            .input-field {
+              width: 150px;
+              color: $icons-color;
+              padding: 8px 10px;
+              margin-bottom: 10px;
+            }
+
+            .remove-btn {
+              font-size: 12px;
+              font-weight: 400;
+              text-decoration: underline;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}

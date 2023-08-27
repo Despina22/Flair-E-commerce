@@ -5,9 +5,10 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { WishlistComponent } from './components/wishlist/wishlist.component';
 import { ShopRoutingModule } from './shop-routing.module';
 import { MatIconModule } from '@angular/material/icon';
+import { AddToBagComponent } from './components/add-to-bag/add-to-bag.component';
 
 @NgModule({
-  declarations: [WishlistComponent],
+  declarations: [WishlistComponent, AddToBagComponent],
   imports: [
     CommonModule,
     ShopRoutingModule,

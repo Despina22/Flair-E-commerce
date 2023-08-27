@@ -21,11 +21,15 @@
     </div>
     <div class="size-container">
       <p class="size-paragraph">SIZE:</p>
-      <span class="size" *ngFor="let size of productDetail.size">{{
-        size
-      }}</span>
+      <span
+        class="size"
+        *ngFor="let size of productDetail.size"
+        (click)="selectSize(size)"
+        [class.selected]="size === selectedSize"
+        >{{ size }}</span
+      >
     </div>
-    <button class="btn">Add to Bag</button>
+    <button class="btn" (click)="addToBag()">Add to Bag</button>
     <h3>Why we love</h3>
     <p class="notes">{{ productDetail.notes }}</p>
   </div>

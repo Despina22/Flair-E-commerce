@@ -20,7 +20,12 @@
     <mat-icon class="icon" routerLink="/shop/wishlist"
       >favorite_border</mat-icon
     >
-    <mat-icon class="icon" matBadge="3" matBadgeColor="accent">
+    <mat-icon
+      class="icon"
+      [matBadge]="badgeValue"
+      matBadgeColor="accent"
+      routerLink="/shop/bag"
+    >
       local_grocery_store</mat-icon
     >
   </div>

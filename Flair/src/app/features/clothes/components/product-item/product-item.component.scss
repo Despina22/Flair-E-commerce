@@ -64,6 +64,11 @@
         margin-right: 20px;
         cursor: pointer;
       }
+      .selected {
+        background-color: $icons-color;
+        color: $white-color;
+        border: 1px solid $border-light-color;
+      }
     }
 
     .btn {
