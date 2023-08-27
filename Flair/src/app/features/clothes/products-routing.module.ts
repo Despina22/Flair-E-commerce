@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ProductItemsComponent } from './components/clothes-items/product-items.component';
+import { ProductItemsComponent } from './components/product-items/product-items.component';
+import { ProductItemComponent } from './components/product-item/product-item.component';
 
 const routes: Routes = [
   { path: ':categoryId', component: ProductItemsComponent },
+  { path: ':categoryId/:productId', component: ProductItemComponent },
 ];
 
 @NgModule({

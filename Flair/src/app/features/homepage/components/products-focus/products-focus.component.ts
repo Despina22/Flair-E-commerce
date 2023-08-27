@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Categories } from 'src/app/features/clothes/enums/category.enum';
 
 @Component({
   selector: 'app-products-focus',
@@ -6,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./products-focus.component.scss'],
 })
 export class ProductsFocusComponent implements OnInit {
-  constructor() {}
+  categories = Categories;
+
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
+
+  navigateToCategory(categoryId: number) {
+    this.router.navigate(['clothing', categoryId]);
+  }
 }

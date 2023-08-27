@@ -1,0 +1,32 @@
+<div class="row">
+  <p class="paragraph">See Out Latest Arrivals</p>
+</div>
+
+<div class="wrapper" *ngIf="productDetail">
+  <div class="img-container">
+    <img
+      [src]="productDetail.imageUrl"
+      [alt]="productDetail.name"
+      class="img"
+    />
+  </div>
+
+  <div class="container">
+    <div>
+      <h1 class="header">{{ productDetail.name }}</h1>
+      <div class="price-container">
+        <p class="price">{{ productDetail.price | currency : "GBP" }}</p>
+        <app-star-rating [rating]="productDetail.stars"></app-star-rating>
+      </div>
+    </div>
+    <div class="size-container">
+      <p class="size-paragraph">SIZE:</p>
+      <span class="size" *ngFor="let size of productDetail.size">{{
+        size
+      }}</span>
+    </div>
+    <button class="btn">Add to Bag</button>
+    <h3>Why we love</h3>
+    <p class="notes">{{ productDetail.notes }}</p>
+  </div>
+</div>

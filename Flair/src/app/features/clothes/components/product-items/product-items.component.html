@@ -19,7 +19,12 @@
 
 <div class="clothes-container">
   <div class="card" *ngFor="let product of products">
-    <img [src]="product.imageUrl" [alt]="product.name" class="img" />
+    <img
+      [src]="product.imageUrl"
+      [alt]="product.name"
+      class="img"
+      [routerLink]="[product.id]"
+    />
     <h3 class="product-name">{{ product.name }}</h3>
     <p class="price">{{ product.price | currency : "GBP" }}</p>
     <app-star-rating [rating]="product.stars"></app-star-rating>

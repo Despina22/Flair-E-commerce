@@ -6,4 +6,5 @@ export interface Clothes {
   stars: number;
   imageUrl: string;
   categoryId: number;
+  notes: string;
 }

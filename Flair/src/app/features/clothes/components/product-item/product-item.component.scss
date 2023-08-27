@@ -1,0 +1,103 @@
+@import "../../../../../assets/styles/variables";
+
+.row {
+  background-color: #212f39;
+  padding: 5px;
+
+  .paragraph {
+    font-size: 14px;
+    color: $white-color;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.wrapper {
+  width: 65vw;
+  display: flex;
+  justify-content: space-around;
+  margin: 30px auto;
+
+  .img-container {
+    margin: 0 20px;
+    .img {
+      width: 400px;
+    }
+  }
+
+  .container {
+    .header {
+      position: relative;
+      overflow: hidden;
+      color: $icons-color;
+      background-color: transparent;
+      font-size: 30px;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+    }
+
+    .price-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 40px 0;
+      border-bottom: 1px solid $icons-color;
+
+      .price {
+        font-size: 18px;
+        font-weight: 300;
+      }
+    }
+
+    .size-container {
+      .size-paragraph {
+        font-size: 18px;
+        font-weight: 300;
+        margin-bottom: 30px;
+      }
+
+      .size {
+        font-size: 14px;
+        padding: 12px 40px;
+        border: 1px solid $icons-color;
+        margin-right: 20px;
+        cursor: pointer;
+      }
+    }
+
+    .btn {
+      font-size: 16px;
+      padding: 10px 40px;
+      background-color: #223532;
+      border: 1px solid #223532;
+      color: $white-color;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-weight: 500;
+      transition: all 0.4s;
+      cursor: pointer;
+      margin: 50px 20px 50px 0;
+
+      &:hover {
+        background-color: $white-color;
+        color: #223532;
+      }
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 300;
+      letter-spacing: 1px;
+      padding-bottom: 10px;
+      text-transform: uppercase;
+      border-bottom: 1px solid $icons-color;
+    }
+
+    .notes {
+      font-size: 14px;
+      font-weight: 300;
+      color: $icons-color;
+    }
+  }
+}
