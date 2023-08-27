@@ -53,9 +53,25 @@
     justify-content: center;
     margin: 5px 5px 25px;
 
-    .img {
-      width: 410px;
-      margin-bottom: 25px;
+    .img-container {
+      position: relative;
+      .img {
+        width: 410px;
+        cursor: pointer;
+      }
+
+      .add {
+        position: absolute;
+        bottom: -1%;
+        left: 0;
+        background-color: rgb(248, 248, 248, 0.6);
+        width: 100%;
+        padding: 15px 20px;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: $font-color;
+        cursor: pointer;
+      }
     }
 
     .product-name {
@@ -63,6 +79,7 @@
       text-align: center;
       font-weight: 300;
       letter-spacing: 4px;
+      margin-top: 25px;
     }
 
     .price {

@@ -6,9 +6,16 @@ import { ProductItemsComponent } from './components/product-items/product-items.
 import { SharedModule } from 'src/app/shared/shared.module';
 import { MatIconModule } from '@angular/material/icon';
 import { ProductItemComponent } from './components/product-item/product-item.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [ProductItemsComponent, ProductItemComponent],
-  imports: [CommonModule, ProductsRoutingModule, SharedModule, MatIconModule],
+  imports: [
+    CommonModule,
+    ProductsRoutingModule,
+    SharedModule,
+    MatIconModule,
+    FormsModule,
+  ],
 })
 export class ProductsModule {}

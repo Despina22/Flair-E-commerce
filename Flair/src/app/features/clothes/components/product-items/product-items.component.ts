@@ -13,6 +13,7 @@ import { BehaviorSubject, take } from 'rxjs';
 export class ProductItemsComponent implements OnInit {
   products?: Clothes[];
   productsLength?: number;
+  sortingOption: string = 'sort-by';
 
   constructor(
     private route: ActivatedRoute,
@@ -35,5 +36,20 @@ export class ProductItemsComponent implements OnInit {
 
   addToWishlist(product: Clothes) {
     this.wishlistService.addToWishlist(product).pipe(take(1)).subscribe();
+  }
+
+  sortProducts() {
+    switch (this.sortingOption) {
+      case 'low-to-high':
+        this.products?.sort((a, b) => a.price - b.price);
+        break;
+      case 'high-to-low':
+        this.products?.sort((a, b) => b.price - a.price);
+        break;
+
+      default:
+        this.products?.sort((a, b) => a.id - b.id);
+        break;
+    }
   }
 }

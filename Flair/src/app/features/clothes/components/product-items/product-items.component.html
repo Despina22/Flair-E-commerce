@@ -8,23 +8,25 @@
     page
   </p>
 
-  <select name="product" class="input-field">
+  <select
+    name="product"
+    class="input-field"
+    [(ngModel)]="sortingOption"
+    (change)="sortProducts()"
+  >
     <option value="sort-by">Sort By</option>
     <option value="low-to-high">Price - Low to High</option>
     <option value="high-to-low">Price - High to Low</option>
-    <option value="new-in">New In</option>
-    <option value="rating">Customer Ratings</option>
   </select>
 </div>
 
 <div class="clothes-container">
   <div class="card" *ngFor="let product of products">
-    <img
-      [src]="product.imageUrl"
-      [alt]="product.name"
-      class="img"
-      [routerLink]="[product.id]"
-    />
+    <div class="img-container" [routerLink]="[product.id]">
+      <img [src]="product.imageUrl" [alt]="product.name" class="img" />
+      <p class="add">Quick add</p>
+    </div>
+
     <h3 class="product-name">{{ product.name }}</h3>
     <p class="price">{{ product.price | currency : "GBP" }}</p>
     <app-star-rating [rating]="product.stars"></app-star-rating>
