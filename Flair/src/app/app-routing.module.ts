@@ -20,6 +20,13 @@ const routes: Routes = [
         (module) => module.ShopModule
       ),
   },
+  {
+    path: 'inspire',
+    loadChildren: () =>
+      import('../app/features/inspiration/inspiration.module').then(
+        (module) => module.InspirationModule
+      ),
+  },
 ];
 
 @NgModule({

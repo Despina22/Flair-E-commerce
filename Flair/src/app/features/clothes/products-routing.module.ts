@@ -4,6 +4,7 @@ import { ProductItemsComponent } from './components/product-items/product-items.
 import { ProductItemComponent } from './components/product-item/product-item.component';
 
 const routes: Routes = [
+  { path: '', component: ProductItemsComponent },
   { path: ':categoryId', component: ProductItemsComponent },
   { path: ':categoryId/:productId', component: ProductItemComponent },
 ];

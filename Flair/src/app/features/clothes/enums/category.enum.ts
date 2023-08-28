@@ -5,4 +5,5 @@ export enum Categories {
   DRESSES = 4,
   SHOES = 5,
   ACCESSORIES = 6,
+  CLOTHING = 7,
 }

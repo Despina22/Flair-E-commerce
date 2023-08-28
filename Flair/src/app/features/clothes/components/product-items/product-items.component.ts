@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { Clothes } from '../../interfaces/clothes.interface';
 import { ActivatedRoute } from '@angular/router';
-import { ProductService } from '../../services/product.service';
+import { take } from 'rxjs';
 import { WishlistService } from 'src/app/features/shop/services/wishlist.service';
-import { BehaviorSubject, take } from 'rxjs';
+import { Categories } from '../../enums/category.enum';
+import { Clothes } from '../../interfaces/clothes.interface';
+import { ProductService } from '../../services/product.service';
 
 @Component({
   selector: 'app-product-items',
@@ -22,16 +23,7 @@ export class ProductItemsComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.route.params.subscribe((params) => {
-      const categoryId = +params['categoryId'];
-
-      this.clothesService
-        .getProductsByCategoryId(categoryId)
-        .subscribe((data: Clothes[]) => {
-          this.products = data;
-          this.productsLength = this.products.length;
-        });
-    });
+    this.getProducts();
   }
 
   addToWishlist(product: Clothes) {
@@ -51,5 +43,22 @@ export class ProductItemsComponent implements OnInit {
         this.products?.sort((a, b) => a.id - b.id);
         break;
     }
+  }
+
+  private getProducts() {
+    this.route.params.subscribe((params) => {
+      const categoryId = +params['categoryId'];
+
+      const productsSubscription =
+        categoryId === Categories.CLOTHING
+          ? this.clothesService.getAllProducts()
+          : this.clothesService.getProductsByCategoryId(categoryId);
+
+      productsSubscription.subscribe((data: Clothes[]) => {
+        this.products = data;
+        this.productsLength = this.products.length;
+        this.sortProducts();
+      });
+    });
   }
 }
