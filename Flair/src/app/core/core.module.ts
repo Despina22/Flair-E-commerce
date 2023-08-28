@@ -9,12 +9,14 @@ import { LandingPageComponent } from './layouts/components/homepage/landing-page
 import { FeaturesModule } from '../features/features.module';
 import { LoginComponent } from './auth/components/login/login.component';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 const COMPONENTS = [HeaderComponent, NavigationComponent, FooterComponent];
 @NgModule({
   declarations: [...COMPONENTS, LandingPageComponent, LoginComponent],
   imports: [
     CommonModule,
+    FormsModule,
     MatIconModule,
     MatBadgeModule,
     FeaturesModule,

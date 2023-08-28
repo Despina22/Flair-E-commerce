@@ -8,6 +8,8 @@
       name="search"
       class="search-field"
       placeholder="Search by category"
+      [(ngModel)]="searchValue"
+      (keydown.enter)="onSearchInputEnter()"
     />
     <mat-icon class="search-icon">search</mat-icon>
   </div>
