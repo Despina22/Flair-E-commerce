@@ -68,3 +68,31 @@
     }
   }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 926px) {
+  .wrapper {
+    .focus-clothes {
+      width: 50%;
+    }
+
+    .image-container {
+      width: 45%;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .focus-clothes {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+
+    .image-container {
+      width: 80%;
+    }
+  }
+}

@@ -50,8 +50,8 @@
 
     .search-icon {
       position: absolute;
-      top: 8px;
-      right: 75px;
+      top: 18%;
+      right: 19%;
       color: $icons-color;
     }
   }
@@ -82,6 +82,50 @@
       font-size: 30px;
       margin: 0px 12px;
       cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .items-wrapper {
+    .search {
+      .search-field {
+        max-width: 330px;
+      }
+      .search-icon {
+        right: 15%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .items-wrapper {
+    .search {
+      .search-field {
+        max-width: 250px;
+        padding-left: 10px;
+      }
+      .search-icon {
+        right: 8%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .items-wrapper {
+    .search {
+      &.item {
+        display: none;
+      }
+      .search-field {
+        width: 0;
+        display: none;
+      }
+      .search-icon {
+        display: none;
+      }
     }
   }
 }

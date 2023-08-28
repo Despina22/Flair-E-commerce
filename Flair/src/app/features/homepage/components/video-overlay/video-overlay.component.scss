@@ -55,3 +55,22 @@
     }
   }
 }
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .wrapper {
+    .text {
+      .header {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .wrapper {
+    .text {
+      .header {
+        font-size: 20px;
+      }
+    }
+  }
+}

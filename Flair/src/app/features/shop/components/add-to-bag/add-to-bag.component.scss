@@ -154,7 +154,7 @@
       .btn-container {
         display: flex;
         justify-content: center;
-        margin-top: 40px;
+        margin: 40px 0;
         .btn {
           font-size: 16px;
           padding: 10px 40px;
@@ -171,6 +171,37 @@
             background-color: $white-color;
             color: #223532;
           }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 825px) {
+  .wrapper {
+    .basket-wrapper {
+      .bag-container {
+        width: 80%;
+
+        .header {
+          font-size: 18px;
+        }
+
+        .bagItems {
+          .bag {
+            padding: 0 20px;
+
+            .product-quantity {
+              width: 180px;
+              .input-field {
+                width: 120px;
+              }
+            }
+          }
+        }
+
+        .total-wrapper {
+          padding: 0 40px;
         }
       }
     }

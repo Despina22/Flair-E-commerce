@@ -2,7 +2,7 @@
 
 .wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   width: 78vw;
   margin: 30px auto;
@@ -52,6 +52,16 @@
         background: white;
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
         width: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .wrapper {
+    .container {
+      .img {
+        max-width: 300px;
       }
     }
   }

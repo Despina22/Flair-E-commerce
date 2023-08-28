@@ -44,3 +44,23 @@
     }
   }
 }
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .wrapper {
+    .links {
+      width: 70%;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .wrapper {
+    .links {
+      width: 90%;
+
+      .link {
+        font-size: 12px;
+      }
+    }
+  }
+}
