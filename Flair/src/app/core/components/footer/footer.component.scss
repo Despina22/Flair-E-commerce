@@ -30,6 +30,14 @@
     }
   }
 }
+.paragraph {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: italic;
+  color: $font-color;
+  padding: 10px;
+}
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .wrapper {
     .header {
