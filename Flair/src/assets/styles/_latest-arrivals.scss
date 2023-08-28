@@ -1,0 +1,15 @@
+@import "../styles/variables";
+
+@mixin latest-arrivals {
+  .row {
+    background-color: #212f39;
+    padding: 5px;
+
+    .paragraph {
+      font-size: 14px;
+      color: $white-color;
+      text-align: center;
+      margin: 0;
+    }
+  }
+}
