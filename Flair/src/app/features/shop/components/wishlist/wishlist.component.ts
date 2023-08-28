@@ -1,6 +1,7 @@
+import { Component, OnInit } from '@angular/core';
 import { BehaviorSubject, take } from 'rxjs';
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Clothes } from 'src/app/features/clothes/interfaces/clothes.interface';
+import { BagService } from '../../services/bag.service';
 import { WishlistService } from '../../services/wishlist.service';
 
 @Component({
@@ -12,36 +13,58 @@ export class WishlistComponent implements OnInit {
   isWishlistEmpty$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(
     true
   );
-  wishlistItems?: Clothes[];
+  productDetail?: Clothes[];
+  selectedSize?: string;
 
-  constructor(private wishlistService: WishlistService) {}
+  constructor(
+    private wishlistService: WishlistService,
+    private bagService: BagService
+  ) {}
 
   ngOnInit(): void {
     this.getWishlistItems();
   }
 
-  checkIsWishlistEmpty() {
-    if (!this.wishlistItems || this.wishlistItems.length === 0) {
+  checkIsWishlistEmpty(): void {
+    if (!this.productDetail || this.productDetail.length === 0) {
       this.isWishlistEmpty$.next(true);
     }
   }
 
-  getWishlistItems() {
+  getWishlistItems(): void {
     this.wishlistService
       .getWishlist()
       .pipe(take(1))
       .subscribe((data) => {
         if (data?.length) {
           this.isWishlistEmpty$.next(false);
-          this.wishlistItems = data;
+          this.productDetail = data;
         } else {
           this.checkIsWishlistEmpty();
         }
       });
   }
 
-  addItem() {
-    console.log('click');
+  selectSize(event: any): void {
+    console.log(event);
+
+    if (event.target) {
+      this.selectedSize = event.target.value;
+    }
+  }
+
+  addItem(productDetail: Clothes) {
+    if (this.selectedSize) {
+      const selectedProduct = {
+        product: productDetail,
+        selectedSize: this.selectedSize,
+      };
+
+      const existingItems = this.bagService.getBagItems();
+      existingItems.push(selectedProduct);
+
+      this.bagService.updateBagItems(existingItems);
+    }
   }
 
   removeItem(item: Clothes) {
@@ -49,8 +72,8 @@ export class WishlistComponent implements OnInit {
       .removeFromWishlist(item)
       .pipe(take(1))
       .subscribe(() => {
-        this.wishlistItems = this.wishlistItems?.filter(
-          (wishlistItem) => wishlistItem !== item
+        this.productDetail = this.productDetail?.filter(
+          (productDetail) => productDetail !== item
         );
 
         this.checkIsWishlistEmpty();

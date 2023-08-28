@@ -1229,5 +1229,20 @@
       "name": "accessories"
     }
   ],
-  "wishlist": []
+  "wishlist": [
+    {
+      "id": 48,
+      "name": "MARIBELLA SILK FLORAL DRESS",
+      "price": 349,
+      "size": [
+        "S",
+        "M",
+        "L"
+      ],
+      "stars": "5",
+      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dw170acf10/images/0223-5516-3793L00/0223-5516-3793L00-MARIBELLA-SILK-DRESS-BURGUNDY-MULTI_02.jpg?sw=1280&sh=1792&strip=false",
+      "categoryId": 4,
+      "notes": "RSVP 'yes', you've just found your perfect dress. The Maribella silk dress is the style solution for your next special occasion or event."
+    }
+  ]
 }

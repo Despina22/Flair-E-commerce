@@ -13,7 +13,7 @@
   <div class="container" *ngIf="!(isWishlistEmpty$ | async)">
     <h2 class="header-2">ALL YOUR MOST-LOVED STYLES, IN ONE PLACE.</h2>
     <div class="wishlistItems">
-      <ng-container *ngFor="let wishlistItem of wishlistItems">
+      <ng-container *ngFor="let wishlistItem of productDetail">
         <div class="card">
           <img
             [src]="wishlistItem.imageUrl"
@@ -27,20 +27,14 @@
           <p class="price">{{ wishlistItem.price | currency : "GBP" }}</p>
           <app-star-rating [rating]="wishlistItem.stars"></app-star-rating>
           <div>
-            <select class="select-field" #sizeSelect>
+            <select class="select-field" (change)="selectSize($event)">
               <option value="size" hidden>Select a Size</option>
               <option *ngFor="let size of wishlistItem.size" [value]="size">
                 {{ size }}
               </option>
             </select>
           </div>
-          <button
-            class="add-btn"
-            [disabled]="sizeSelect.value === ''"
-            (click)="addItem()"
-          >
-            Add
-          </button>
+          <button class="add-btn" (click)="addItem(wishlistItem)">Add</button>
         </div>
       </ng-container>
     </div>
