@@ -103,3 +103,15 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    flex-wrap: wrap;
+
+    .login,
+    .register {
+      margin: 40px 0;
+      width: 90%;
+    }
+  }
+}
