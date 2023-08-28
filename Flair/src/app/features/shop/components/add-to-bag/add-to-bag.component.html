@@ -23,26 +23,41 @@
           <div class="product-info">
             <h3 class="header-info">{{ item.product.name }}</h3>
             <p class="paragraph">In stock</p>
-            <p class="price">{{ item.product.price | currency : "GBP" }}</p>
+            <p class="price">
+              {{
+                item.product.price * item.selectedQuantity | currency : "GBP"
+              }}
+            </p>
           </div>
           <div class="product-quantity">
-            <select name="quantity" class="input-field">
-              <option value="">Quantity</option>
-              <option value="">1</option>
-              <option value="">2</option>
-              <option value="">3</option>
-              <option value="">4</option>
-              <option value="">5</option>
+            <select
+              name="quantity"
+              class="input-field"
+              [(ngModel)]="item.selectedQuantity"
+              (ngModelChange)="onQuantityChange()"
+            >
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
             </select>
-            <p>Selected size: {{ item.selectedSize }}</p>
+            <p class="paragraph">Selected size: {{ item.selectedSize }}</p>
             <p class="remove-btn" (click)="removeItem(item)">Remove</p>
           </div>
         </div>
+        <p class="continue" routerLink="/">Continue shopping</p>
       </div>
     </div>
     <div class="bag-container">
       <h1 class="header">Summary</h1>
-      <div class="bagItems"></div>
+      <div class="total-wrapper">
+        <p class="total">Total</p>
+        <span> {{ totalPrice | currency : "GBP" }}</span>
+      </div>
+      <div class="btn-container">
+        <button class="btn">Checkout Securely</button>
+      </div>
     </div>
   </div>
 </div>
