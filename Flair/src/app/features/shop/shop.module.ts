@@ -18,6 +18,5 @@ import { ShopRoutingModule } from './shop-routing.module';
     SharedModule,
     MatIconModule,
   ],
-  exports: [],
 })
 export class ShopModule {}

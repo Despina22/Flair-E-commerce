@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Categories } from 'src/app/features/clothes/enums/category.enum';
 import { Slider } from 'src/app/features/homepage/interfaces/slider.interface';
@@ -8,7 +8,7 @@ import { Slider } from 'src/app/features/homepage/interfaces/slider.interface';
   templateUrl: './product-essentials.component.html',
   styleUrls: ['./product-essentials.component.scss'],
 })
-export class ProductEssentialsComponent implements OnInit {
+export class ProductEssentialsComponent {
   imageObject: Slider[] = [
     {
       image: '../../../../../assets/images/car-1.webp',
@@ -44,8 +44,6 @@ export class ProductEssentialsComponent implements OnInit {
   categories = Categories;
 
   constructor(private router: Router) {}
-
-  ngOnInit(): void {}
 
   navigateToCategory(categoryId: number) {
     this.router.navigate(['clothing', categoryId]);

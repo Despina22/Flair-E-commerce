@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Categories } from 'src/app/features/clothes/enums/category.enum';
 
@@ -7,12 +7,10 @@ import { Categories } from 'src/app/features/clothes/enums/category.enum';
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.scss'],
 })
-export class NavigationComponent implements OnInit {
+export class NavigationComponent {
   categories = Categories;
 
   constructor(private router: Router) {}
-
-  ngOnInit(): void {}
 
   navigateToCategory(categoryId: number) {
     this.router.navigate(['clothing', categoryId]);
