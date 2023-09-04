@@ -18,25 +18,8 @@ export class ProductService {
   }
 
   getProductsByCategoryId(categoryId: number): Observable<Clothes[]> {
-    const categories$ = this.http.get<Category[]>(`${this.clothesUrl}category`);
-    const products$ = this.http.get<Clothes[]>(`${this.clothesUrl}products`);
-
-    return forkJoin<[Category[], Clothes[]]>([categories$, products$]).pipe(
-      map(([categories, products]) => {
-        const category = categories.find((cat) => cat.id === categoryId);
-
-        if (category) {
-          return products.filter(
-            (product) => product.categoryId === category.id
-          );
-        } else {
-          return [];
-        }
-      }),
-      catchError((error) => {
-        console.error('Error fetching products:', error);
-        return [];
-      })
+    return this.http.get<Clothes[]>(
+      `${this.clothesUrl}products?categoryId=${categoryId}`
     );
   }
 

@@ -1229,47 +1229,5 @@
       "name": "accessories"
     }
   ],
-  "wishlist": [
-    {
-      "id": 17,
-      "name": "MISCHA ROLL NECK",
-      "price": 39,
-      "size": [
-        "S",
-        "M",
-        "XL"
-      ],
-      "stars": "4",
-      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dw147dde89/images/0223-2070-3669L00/0223-2070-3669L00-MISCHA-ROLL-NECK-OCHRE-YELLOW_02.jpg?sw=571&sh=800&strip=false",
-      "categoryId": 2,
-      "notes": "A Hobbs signature - and for good reason. The fluid Mischa roll neck top is an essential layering piece no wardrobe should be without."
-    },
-    {
-      "id": 18,
-      "name": "JUNE BLOUSE",
-      "price": 89,
-      "size": [
-        "M",
-        "L",
-        "XL"
-      ],
-      "stars": "5",
-      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dwfbd87d0a/images/0223-6929-9324L00/0223-6929-9324L00-JUNE-BLOUSE-MULTI_02.jpg?sw=571&sh=800&strip=false",
-      "categoryId": 2,
-      "notes": "A colourful speck print and a flattering fit accentuate the effortless femininity of the June blouse."
-    },
-    {
-      "id": 16,
-      "name": "AIMEE DOUBLE FRONTED TOP",
-      "price": 39,
-      "size": [
-        "S",
-        "M"
-      ],
-      "stars": "5",
-      "imageUrl": "https://www.hobbs.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-hobbs-catalog/default/dwb6d3b2fa/images/0121-2249-3669L00/0121-2249-3669L00-AIMEE-TOP-IVORY_02.jpg?sw=571&sh=800&strip=false",
-      "categoryId": 2,
-      "notes": "Fuss-free style for days on the go. This jersey top is an elegant, effortless option for both your office and off-duty wardrobe. With an easy V-neck and flattering three quarter-length sleeves, the Aimee top comes in a selection of hues. Crafted with a touch of stretch for comfortable wear."
-    }
-  ]
+  "wishlist": []
 }
