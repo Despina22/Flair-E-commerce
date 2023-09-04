@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  baseApiUrl: 'http://localhost:3000/',
+  baseApiUrl: 'https://my-json-server.typicode.com/Despina22/Flair-E-commerce/',
 };
